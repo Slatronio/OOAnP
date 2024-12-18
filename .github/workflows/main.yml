@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Required Tools
         run: |
-          dotnet new tool-manifest
+          dotnet new tool-manifest --force
           dotnet tool install dotnet-coverage
           dotnet tool install coverlet.console
 
